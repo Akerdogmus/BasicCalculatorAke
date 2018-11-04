@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+	char o;
+	float num1,num2,result;
+	printf("Lab 6 Experiment=Basic Calculator by Ake\n");
+	printf("________________________________________\n");
+	printf("Enter operator [+,-,*,/]\n");
+	scanf("%c",&o);
+	printf("Please enter two numbers\n");
+	scanf("%f %f",&num1,&num2);
+	
+	
+	if(num2!=0)
+	{
+	if(o=='+')
+		printf("=%f\n",num1+num2);
+	else if(o=='-')
+		printf("=%f\n",num1-num2);
+	else if(o=='*')
+		printf("=%f\n",num1*num2);
+	else if(o=='/')
+		printf("=%f\n",num1/num2);
+	else
+		printf("Wrong!!! Please enter only this operators +,-,* or /");
+	}
+	else
+	{
+		
+		if(o=='/');
+		    printf("%f / 0 = infinity",num1);
+	}
+	
+
+	getch();
+	return 0;
+}
