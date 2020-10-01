@@ -11,27 +11,28 @@ int main()
 	scanf("%c",&o);
 	printf("Please enter two numbers\n");
 	scanf("%f %f",&num1,&num2);
+	#you can use switch case also.
 	
-	
-	if(num2!=0)
+	switch(o)
 	{
-	if(o=='+')
+	case '+':
 		printf("=%f\n",num1+num2);
-	else if(o=='-')
+		break;
+	case '-':
 		printf("=%f\n",num1-num2);
-	else if(o=='*')
+		break;
+	case '*':
 		printf("=%f\n",num1*num2);
-	else if(o=='/')
+		break;
+	case '/':
 		printf("=%f\n",num1/num2);
-	else
+		break;
+	default:
 		printf("Wrong!!! Please enter only this operators +,-,* or /");
 	}
-	else
-	{
-		
-		if(o=='/');
+	
+	if(o=='/')
 		    printf("%f / 0 = infinity",num1);
-	}
 	
 
 	getch();
